@@ -1,0 +1,21 @@
+Preferences -> Package Settings -> eCSStractor -> Settings User
+
+{
+	"brackets_newline_after": false,
+	"bem.modifier_separator": "_",
+	"destination": "clipboard",
+	"comment_style": "SCSS",
+	"add_comments": false,
+	"bem_nesting": true,
+}
+
+
+Настройка сочетания клавиш
+
+Preferences -> Key Bindings
+
+{"keys": ["твое сочетение клавиш например ctrl+1"],"command": "ecsstractor"},
+
+
+Для верного отображения подсветки синтаксиса необходимо загрузить файл SCSS.sublime-package из архива в
+C:\Users\Имя пользователя\AppData\Roaming\Sublime Text 3\Installed Packages\
