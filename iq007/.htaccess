@@ -1,0 +1,82 @@
+# BEGIN iThemes Security - Не меняйте и не удаляйте эту строку
+# iThemes Security Config Details: 2
+	# Защита системных файлов - Безопасность > Настройки > Системные подстройки > Системные файлы
+	<files .htaccess>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+	<files readme.html>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+	<files readme.txt>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+	<files wp-config.php>
+		<IfModule mod_authz_core.c>
+			Require all denied
+		</IfModule>
+		<IfModule !mod_authz_core.c>
+			Order allow,deny
+			Deny from all
+		</IfModule>
+	</files>
+
+	# Отключить просмотр папок - Безопасность > Настройки > Системные подстройки > Просмотр папок
+	Options -Indexes
+
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+
+		# Защита системных файлов - Безопасность > Настройки > Системные подстройки > Системные файлы
+		RewriteRule ^wp-admin/install\.php$ - [F]
+		RewriteRule ^wp-admin/includes/ - [F]
+		RewriteRule !^wp-includes/ - [S=3]
+		RewriteRule ^wp-includes/[^/]+\.php$ - [F]
+		RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F]
+		RewriteRule ^wp-includes/theme-compat/ - [F]
+		RewriteCond %{REQUEST_FILENAME} -f
+		RewriteRule (^|.*/)\.(git|svn)/.* - [F]
+
+		# Запрет PHP в папке загрузок - Безопасность > Настройки > Системные подстройки > PHP в загрузках
+		RewriteRule ^wp\-content/uploads/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+
+		# Отключить PHP в плагинах - Безопасность> Настройки> Системные твики> PHP в плагинах
+		RewriteRule ^wp\-content/plugins/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+
+		# Отключить PHP в Темы - Безопасность> Настройки> Системные твики> PHP в Темы
+		RewriteRule ^wp\-content/themes/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	</IfModule>
+# END iThemes Security - Не меняйте и не удаляйте эту строку
+
+# BEGIN WordPress
+# Директивы (строки) между `BEGIN WordPress` и `END WordPress`
+# созданы автоматически и подлежат изменению только через фильтры WordPress.
+# Сделанные вручную изменения между этими маркерами будут перезаписаны.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
