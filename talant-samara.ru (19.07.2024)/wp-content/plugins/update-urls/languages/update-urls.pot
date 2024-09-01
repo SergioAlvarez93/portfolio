@@ -1,0 +1,172 @@
+# Copyright (C) 2023 KaizenCoders
+# This file is distributed under the GPL-3.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Update URLs 1.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/update-urls\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-07-18T16:34:53+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: update-urls\n"
+
+#. Plugin Name of the plugin
+msgid "Update URLs"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/update-urls"
+msgstr ""
+
+#. Description of the plugin
+msgid "Quick and Easy way to search old links and replace them with new links in WordPress"
+msgstr ""
+
+#. Author of the plugin
+msgid "KaizenCoders"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://kaizencoders.com"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:4
+msgid "URLs in page content ( posts, pages, custom post types, revisions)"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:5
+msgid "URLs in excerpts"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:6
+msgid "URLs for attachments ( images, documents, general media )"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:7
+msgid "URLs in links"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:8
+msgid "URLs in custom fields and meta boxes"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:9
+msgid "Update ALL GUIDs GUIDs for posts should only be changed on development sites. <a href=\"%s\">Learn More</a>."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:17
+#: lite/includes/Admin/Templates/search-replace.php:23
+#: lite/includes/Admin/Templates/search-replace.php:84
+msgid "ERROR"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:17
+msgid "Please try again."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:23
+#: lite/includes/Admin/Templates/search-replace.php:56
+#: lite/includes/Admin/Templates/search-replace.php:84
+msgid "Your URLs have not been updated."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:23
+msgid "Please select at least one checkbox."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:40
+msgid "Why do the results show 0 URLs updated?"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:40
+msgid "This happens if a URL is incorrect OR if it is not found in the content. Check your URLs and try again."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:54
+msgid "ERROR: Something may have gone wrong."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:65
+msgid "Success! Your URLs have been updated."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:71
+msgid "Results"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:84
+msgid "Please enter values for both the old url and the new url."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:102
+msgid "After moving a website, %s lets you fix old URLs in content, excerpts, links, and custom fields."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:103
+msgid "WE RECOMMEND THAT YOU BACKUP YOUR WEBSITE."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:104
+msgid "You may need to restore it if incorrect URLs are entered in the fields below."
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:112
+msgid "Old URL"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:134
+msgid "New URL"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:156
+msgid "Where To Update?"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:164
+msgid "Choose which URLs should be updated"
+msgstr ""
+
+#: lite/includes/Admin/Templates/search-replace.php:202
+msgid "Update URLs NOW"
+msgstr ""
+
+#: lite/includes/Admin/Templates/update-urls.php:4
+msgid "Search / Replace"
+msgstr ""
+
+#: lite/includes/Admin/Templates/update-urls.php:9
+msgid "Other Awesome Products"
+msgstr ""
+
+#: lite/includes/Helper.php:562
+msgid "Content Items (Posts, Pages, Custom Post Types, Revisions)"
+msgstr ""
+
+#: lite/includes/Helper.php:566
+msgid "Excerpts"
+msgstr ""
+
+#: lite/includes/Helper.php:570
+msgid "Attachments"
+msgstr ""
+
+#: lite/includes/Helper.php:574
+msgid "Links"
+msgstr ""
+
+#: lite/includes/Helper.php:578
+msgid "Custom Fields"
+msgstr ""
+
+#: lite/includes/Helper.php:582
+msgid "GUIDs"
+msgstr ""
+
+#. translators: %s: PHP version
+#: update-urls.php:92
+msgid "Update URLs requires PHP version %s+, plugin is currently NOT RUNNING."
+msgstr ""
