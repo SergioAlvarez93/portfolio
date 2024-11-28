@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('SofiaProLight.eot');
+    src: url('SofiaProLight.eot?#iefix') format('embedded-opentype'),
+        url('SofiaProLight.woff2') format('woff2'),
+        url('SofiaProLight.woff') format('woff'),
+        url('SofiaProLight.ttf') format('truetype'),
+        url('SofiaProLight.svg#SofiaProLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('SofiaProRegular.eot');
+    src: url('SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+        url('SofiaProRegular.woff2') format('woff2'),
+        url('SofiaProRegular.woff') format('woff'),
+        url('SofiaProRegular.ttf') format('truetype'),
+        url('SofiaProRegular.svg#SofiaProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
