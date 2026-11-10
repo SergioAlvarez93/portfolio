@@ -1,0 +1,16 @@
+{
+  "name": "bitrix-catalog-import",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automated import and synchronization of Bitrix catalog products and offers from Excel",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

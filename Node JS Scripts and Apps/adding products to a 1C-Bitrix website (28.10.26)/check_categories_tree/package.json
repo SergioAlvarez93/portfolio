@@ -1,0 +1,14 @@
+
+{
+  "name": "check-categories-tree",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds a hierarchical category path report for Bitrix catalog products",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

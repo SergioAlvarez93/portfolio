@@ -1,0 +1,17 @@
+{
+  "name": "ozon-sgr-parser",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Extracts EAEU SGR numbers from Ozon product pages",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "repair": "node repair_loop.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

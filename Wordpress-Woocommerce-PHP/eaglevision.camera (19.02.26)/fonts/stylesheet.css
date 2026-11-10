@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Inter 28pt Bold";
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Bold.eot");
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Bold.eot?#iefix") format("embedded-opentype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Bold.woff2") format("woff2"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Bold.woff") format("woff"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Bold.ttf") format("truetype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Bold.svg#Inter_28pt-Bold") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter 28pt Medium";
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Medium.eot");
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Medium.eot?#iefix") format("embedded-opentype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Medium.woff2") format("woff2"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Medium.woff") format("woff"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Medium.ttf") format("truetype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Medium.svg#Inter_28pt-Medium") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter 28pt Regular";
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Regular.eot");
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Regular.eot?#iefix") format("embedded-opentype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Regular.woff2") format("woff2"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Regular.woff") format("woff"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Regular.ttf") format("truetype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-Regular.svg#Inter_28pt-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter 28pt SemiBold";
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-SemiBold.eot");
+    src: url("/wp-content/themes/eaglevision/fonts/Inter_28pt-SemiBold.eot?#iefix") format("embedded-opentype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-SemiBold.woff2") format("woff2"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-SemiBold.woff") format("woff"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-SemiBold.ttf") format("truetype"),
+         url("/wp-content/themes/eaglevision/fonts/Inter_28pt-SemiBold.svg#Inter_28pt-SemiBold") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

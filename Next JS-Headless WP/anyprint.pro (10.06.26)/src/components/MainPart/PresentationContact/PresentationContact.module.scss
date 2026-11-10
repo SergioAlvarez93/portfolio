@@ -1,0 +1,12 @@
+.contact {
+  display: block;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: -0.5%;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    color: rgb(229, 9, 127);
+  }
+}

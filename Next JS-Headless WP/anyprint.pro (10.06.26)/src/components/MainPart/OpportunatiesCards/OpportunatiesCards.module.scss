@@ -1,0 +1,35 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(239px, max-content));
+  column-gap: 15px;
+  row-gap: 24px;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  gap: 10.86px;
+  align-items: center;
+}
+
+.card-icon-wrap {
+  position: relative;
+  width: 38.06px;
+  height: 38.06px;
+  flex-shrink: 0;
+}
+
+.card-icon {
+  object-fit: contain;
+}
+
+.card-txt {
+  font-weight: 400;
+  font-size: 16.68px;
+}
+
+@media (max-width: 991px) {
+  .cards {
+    justify-content: center;
+  }
+}

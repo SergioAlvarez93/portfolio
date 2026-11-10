@@ -1,0 +1,29 @@
+@import "nullstyle";
+
+@mixin cti() {
+  container-type: inline-size;
+}
+
+@function cqi($width, $min, $max) {
+  @return clamp($min * 1px, ($max * 100 / $width) * 1cqi, $max * 1px);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.general-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}

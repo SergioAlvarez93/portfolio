@@ -1,0 +1,37 @@
+@mixin cti() {
+  container-type: inline-size;
+}
+
+@function cqi($width, $min, $max) {
+  @return clamp($min * 1px, ($max * 100 / $width) * 1cqi, $max * 1px);
+}
+
+@function cqi-pct($container-width, $min-pct, $max-pct) {
+  @return clamp(
+    $min-pct * 1%,
+    ($max-pct / $container-width) * 100cqi,
+    $max-pct * 1%
+  );
+}
+
+$defaultMaxWidth: 1920;
+$defaultMinWidth: 360;
+
+@function adaptiveMinus(
+  $smallScreenValue,
+  $largeScreenValue,
+  $smallWidth: $defaultMinWidth,
+  $largeWidth: $defaultMaxWidth
+) {
+  $addValue: $largeScreenValue - $smallScreenValue;
+  $addWidth: $largeWidth - $smallWidth;
+
+  @return clamp(
+    #{$smallScreenValue + px},
+    calc(
+      #{$smallScreenValue + px} + #{$addValue} *
+        ((100vw - #{$smallWidth + px}) / #{$addWidth})
+    ),
+    #{$largeScreenValue + px}
+  );
+}

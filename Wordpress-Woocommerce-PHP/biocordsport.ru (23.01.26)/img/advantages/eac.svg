@@ -1,0 +1,9 @@
+<svg viewBox="0 0 70 69" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.000000" height="69.000000" fill="none" customFrame="#000000">
+	<defs>
+		<image id="image_3" width="46.000000" height="45.000000" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAtCAYAAADRLVmZAAAABHNCSVQICAgIfAhkiAAAAwpJREFUaIHtmbFuG0cQhr/ZW61tyWfZKtLFfRo1bLSQA+gBjNSBK79BXPsJXLpNkyJFAqRKJzgtIR0BQ62bAIYNQUXgwIBFhdKd7m5SkIwIao880adLIvADCBAzuzs/d2eJmTvx3h8Ca4ASxgB3rLVfdrvdD5MO7/1L4DvgtGJuFXeAn5MkeTJp7HQ6K86530f+8xnzBxbYAFbnBCor7HZCyJVQVVfh2gDiOdNPDVDUiFMOBoPQiVSd0lxEpGpuHT25qRtndXVVao69DqZ/pAsJTye+F8AZcJymaVW6TFIGgsyy1+EMGG9aDvwFvLWBgbeAZyLya1EUZ8aY4yRJzkY+mSPAAMeq+q0xZg1AVU+AX5ift1XcBl6o6vfGmMH6+vqn3d3dNCQcY8ze3t7e+0WiiEiWJMnupM17ny2y1hhVfdXr9d5N2oI5XhTF3c8IIjs7O/9sSKfTWeHiqBdCRB5M2+pezv8cS+FtsxTeNkvhbbMU3jY3S7iq5k0FiON44Zp9FkHh1tqVUb0hU2Nr1Rz9ft9tbm6ubW9vxwy7pMbFh6rDvCzL39I0PfXenwAnQD/Lsq8PDg4Gc9ZTYMM599E5R1mWpGkK4Ea+xpqRkPBoFCDmooYurbXBEniKsbBbDWibSShVQruSWWuvJVcX5Ub9q4S6FZvneZ38nNWh1+neaxPKWwf8qKpd4MgYcxhF0R/dbve4xnoR8EZEnqrqV8A9hg92ngMPG1NNWDjA816vdzRlm9coj+nv7++/Bl6PDVtbW9+ISKPCq3L8i4Ct7uW8tBkislZbUU1u1OX8X7AU3jZL4W2zFN42S+FtExReluVJ20LmcKncCAqPouiR935j8jk3V+g5m0ZVP0zbQtVhpqo/AJqm6Sfv/aGq/nl+fv64Rs95LYjIT977tyNt70XkTVU9DsPdvQ/cFxGcc7eBf0N4wbCWfwggIgBa93JmWZY12sFcgShg+9hW3jYewzJ8d5hT3ShEgMZxfCm4iKiqwsV7d0ugt1TVYnTE43ErVL9mL0afKr8B8r8BiZ72Gjy4resAAAAASUVORK5CYII=" />
+		<pattern id="pattern_3" width="1.000000" height="1.000000" image-fill-type="fill" patternContentUnits="objectBoundingBox">
+			<use transform="matrix(0.0219048,0,0,0.0222222,-0.00380951,0)" xlink:href="#image_3" />
+		</pattern>
+	</defs>
+	<rect id="иконки_Монтажная_область_1_копия_3" width="70.000000" height="69.000000" x="0.000000" y="0.000000" fill="url(#pattern_3)" />
+</svg>

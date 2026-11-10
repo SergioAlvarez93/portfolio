@@ -1,0 +1,26 @@
+.nav-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: adaptiveMinus(15, 32, 992, 1832);
+}
+
+.nav-link {
+  font-family: "Inter";
+  font-size: adaptiveMinus(14, 16, 992, 1832);
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #e71c7e;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .nav-link {
+    font-size: adaptiveMinus(16, 20, 360, 992);
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "mpstats-fetcher",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fetches Ozon category products from MPSTATS API",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,25 @@
+.request-btn {
+  font-size: inherit;
+  text-align: center;
+  padding: 12px 17px;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #3848e0 0%, #970edb 100%);
+  border-radius: 33px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56, 72, 224, 0.4);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(56, 72, 224, 0.3);
+  }
+}

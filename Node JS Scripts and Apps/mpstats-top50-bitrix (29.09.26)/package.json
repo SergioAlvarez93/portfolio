@@ -1,0 +1,13 @@
+{
+  "name": "mpstats-top50-bitrix-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Collects MPSTATS brand analytics for Ozon and Wildberries and synchronizes the Top 50 with Bitrix24.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}

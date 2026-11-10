@@ -1,0 +1,17 @@
+
+{
+  "name": "bitrix-price-quantity-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synchronizes product prices and stock quantities between Excel and Bitrix catalog offers",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

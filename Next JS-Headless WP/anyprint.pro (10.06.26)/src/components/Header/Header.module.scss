@@ -1,0 +1,143 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1832px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 141px auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  gap: 20px;
+}
+
+.logo-chunk {
+  position: relative;
+  display: block;
+  width: 141px;
+  height: 48px;
+}
+
+.header-socials {
+  display: flex;
+  column-gap: 17px;
+}
+
+.header-request {
+  font-size: adaptiveMinus(18, 24, 991, 1820);
+}
+
+.burger-btn {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .header-grid {
+    grid-template-columns: 141px 35px;
+    height: 48px;
+    align-content: start;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .header-nav,
+  .header-socials,
+  .header-request {
+    display: none;
+  }
+
+  .burger-btn {
+    position: relative;
+    display: flex;
+    width: 35px;
+    height: 28px;
+    justify-content: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #e5097f;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+    }
+    span {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: #e5097f;
+      border-radius: 4px;
+      align-self: center;
+      transition: all 0.3s ease-in-out;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #e5097f;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .header-active {
+    .header-grid {
+      grid-template-rows: 48px 1fr auto;
+      height: calc(100vh - 64px);
+      overflow: auto;
+    }
+
+    .logo-chunk {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .burger-btn {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      &::before {
+        top: 12px;
+        width: 100%;
+        transform: rotate(-45deg);
+      }
+      span {
+        opacity: 0;
+      }
+      &::after {
+        bottom: 12px;
+        width: 100%;
+        transform: rotate(45deg);
+      }
+    }
+
+    .header-nav {
+      display: flex;
+      justify-content: center;
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+
+    .header-socials {
+      display: flex;
+      justify-content: center;
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
+  }
+}

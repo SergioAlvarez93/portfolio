@@ -1,0 +1,14 @@
+.img {
+  object-fit: contain;
+}
+
+.play {
+  position: absolute;
+  display: block;
+  width: cqi(800, 29.53, 83.97) !important;
+  height: cqi(800, 29.53, 83.97) !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

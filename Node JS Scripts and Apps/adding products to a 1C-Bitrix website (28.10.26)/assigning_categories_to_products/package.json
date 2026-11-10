@@ -1,0 +1,19 @@
+
+{
+  "name": "bitrix-ai-category-assigner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered product categorization and automatic Bitrix catalog section assignment",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "undici": "^7.16.0",
+    "wreq-js": "^3.2.0"
+  }
+}

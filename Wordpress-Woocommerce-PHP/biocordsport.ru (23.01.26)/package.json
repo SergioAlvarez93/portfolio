@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "go": "sass --watch scss:css --style=compressed --no-source-map && postcss \"css/**/*.css\" --use autoprefixer --replace && find css -type f -name '*.css' ! -name '*.min.css' -exec sh -c 'mv \"$0\" \"${0%.css}.min.css\"' {} \\;"
+  }
+}

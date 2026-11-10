@@ -1,0 +1,255 @@
+@mixin cti() {
+  container-type: inline-size;
+}
+
+@function cqi($width, $min, $max) {
+  @return clamp($min * 1px, ($max * 100 / $width) * 1cqi, $max * 1px);
+}
+
+@media (max-width: 1321px) {
+  .products {
+    &__bg {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .lock {
+    overflow: hidden;
+  }
+
+  .header {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #2f2f2f;
+      z-index: -1;
+    }
+  }
+
+  .logo-wrap {
+    position: relative;
+    z-index: 12;
+  }
+
+  .burger-btn {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 12;
+  }
+
+  .header-grid {
+    position: relative;
+    align-items: center;
+  }
+
+  .burger-btn.active {
+    &::before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    .burger-btn__dash {
+      transform: scale(0);
+    }
+    &::after {
+      transform: rotate(-45deg);
+      top: 9px;
+    }
+  }
+
+  .navigation {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    padding-top: 35vh;
+    width: 100%;
+    height: 101vh;
+    overflow: auto;
+    background-color: #2f2f2f;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    &__item {
+      font-family: "Gotham";
+      font-size: 24px;
+      font-weight: 700;
+      padding-bottom: 50px;
+    }
+  }
+
+  .navigation.active {
+    top: 0;
+    background-color: rgba(47, 47, 47, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    #nav-ul {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: stretch;
+      text-align: center;
+    }
+  }
+
+  .header-btn {
+    position: absolute;
+    right: 45px;
+    z-index: 12;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    &__item {
+      &:nth-child(n + 7) {
+        display: none;
+      }
+    }
+  }
+
+  .product:has(.product-grid__item[data-count="6"]) {
+    .load-more-button {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100vw;
+  }
+  .navigation {
+    max-width: 100vw;
+  }
+  .about {
+    &__bg {
+      display: none;
+    }
+  }
+  .about-content {
+    flex-direction: column;
+    &__video {
+      flex: unset;
+      width: 100%;
+    }
+    &__txt-box {
+      flex: unset;
+    }
+  }
+  .products-cards {
+    margin: 0;
+    &__item {
+      min-width: 330px;
+    }
+  }
+  .gallery-swiper {
+    &__slide {
+      max-width: unset;
+      max-height: unset;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-wrap {
+    position: relative;
+    z-index: 12;
+  }
+
+  .preview {
+    &__title {
+      font-size: cqi(767, 22, 32);
+    }
+  }
+
+  .products {
+    &__bg {
+      opacity: 0.3;
+    }
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    &__item {
+      &:nth-child(n + 4) {
+        display: none;
+      }
+    }
+  }
+
+  .product:has(.product-grid__item[data-count="3"]) {
+    .load-more-button {
+      display: block;
+    }
+  }
+
+  .product-buttons {
+    flex-direction: column;
+    .load-more-button,
+    .product-download-link {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .contacts {
+    &__subtitle {
+      margin-bottom: 35px;
+    }
+  }
+
+  .contant-form {
+    max-width: unset;
+    &__name,
+    &__tel,
+    &__question {
+      width: 100%;
+    }
+  }
+
+  .footer-flexbox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    order: 2;
+    &__copyright {
+      width: 100%;
+    }
+  }
+  .footer-contacts {
+    width: 100%;
+    text-align: center;
+    &__email,
+    &__phone {
+      flex-basis: 100%;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .fancybox {
+    &__content {
+      width: 75vw !important;
+      height: 75vw !important;
+    }
+    &__caption {
+      max-width: 100%;
+      max-height: 50vh;
+      height: 50vh;
+    }
+  }
+  .is-compact .fancybox__footer .fancybox__caption {
+    padding: 15px 26px;
+  }
+  .is-compact .fancybox__footer {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    z-index: 0;
+  }
+}

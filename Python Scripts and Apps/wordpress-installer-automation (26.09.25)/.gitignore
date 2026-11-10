@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.log
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+**/access.txt
+phpmyadmin_error.png
+phpmyadmin_page_source.html
+wordpress_install_error.png
+wordpress_install_page_source.html

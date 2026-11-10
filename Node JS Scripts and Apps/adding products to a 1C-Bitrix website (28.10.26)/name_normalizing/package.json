@@ -1,0 +1,17 @@
+
+{
+  "name": "bitrix-name-normalizing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Normalizes Bitrix catalog product and offer names using an Excel source table",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

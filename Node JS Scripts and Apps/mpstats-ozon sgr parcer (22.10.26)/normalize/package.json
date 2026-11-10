@@ -1,0 +1,16 @@
+{
+  "name": "mpstats-sgr-normalizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Normalizes SGR numbers, groups Ozon products by sellers and generates an Excel report",
+  "main": "normalize.js",
+  "scripts": {
+    "start": "node normalize.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

@@ -1,0 +1,145 @@
+.request-form {
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.name-label,
+.name-email,
+.name-tel,
+.name-textarea,
+.name,
+.email,
+.tel,
+.textarea {
+  display: block;
+  width: 100%;
+}
+
+.name,
+.email,
+.tel,
+.textarea {
+  font-size: 15px;
+  padding: 13px 25px;
+  background-color: #ebecec;
+  border: 1px solid #727271;
+  border-radius: 10px;
+}
+
+.name::placeholder,
+.email::placeholder,
+.tel::placeholder,
+.textarea::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  color: #b2b3b3;
+}
+
+.textarea {
+  resize: none;
+  min-height: 125px;
+  margin-bottom: 35px;
+}
+
+.name,
+.email,
+.tel {
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #c5c6c6;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: #2b2a29;
+  }
+}
+
+.request-form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+}
+
+.checkbox-label,
+.checkbox,
+.fake-checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.checkbox-label {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  visibility: hidden;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.fake-checkbox {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #fff;
+  border-radius: 7.5px;
+  border: 1px solid #727271;
+  cursor: pointer;
+}
+
+.fake-checkbox-condition {
+  grid-column: 1;
+  grid-row: 1;
+  width: 17px;
+  height: 17px;
+  border-radius: 4px;
+  background-color: #8777ff;
+  pointer-events: none;
+  justify-self: center;
+}
+
+.request-form-policy {
+  font-size: 9px;
+  font-weight: 400;
+  color: #b2b3b3;
+}
+
+.request-form-policy-open-link {
+  color: #727271;
+  text-decoration: underline;
+}
+
+.modal-txt {
+  font-size: adaptiveMinus(14, 16, 360, 767);
+  font-weight: 400;
+  color: #2b2a29;
+  text-align: center;
+  white-space: pre-line;
+  margin-bottom: 15px;
+}
+
+.input-error {
+  background-color: #ffe6e6;
+  border-color: #ff0000;
+}
+
+.input-error::placeholder {
+  color: #ff0000;
+  opacity: 0.7;
+}
+
+.checkbox-error {
+  background-color: #ffe6e6;
+  border-color: #ff0000;
+}

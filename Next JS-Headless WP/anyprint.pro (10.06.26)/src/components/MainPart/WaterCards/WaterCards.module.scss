@@ -1,0 +1,38 @@
+.water-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 22.92%));
+  grid-auto-rows: auto;
+  column-gap: 25px;
+  row-gap: 80px;
+  justify-content: space-evenly;
+}
+
+.water-card {
+  display: flex;
+  flex-direction: column;
+  gap: adaptiveMinus(26, 47, 360, 1560);
+}
+
+.water-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 319 / 440;
+}
+
+.water-card-img {
+  object-fit: contain;
+}
+
+.water-card-txt {
+  text-align: center;
+  font-size: adaptiveMinus(16, 18, 360, 1560);
+  font-weight: 400;
+  color: #2b2a29;
+  white-space: pre-line;
+}
+
+@media (max-width: 767px) {
+  .water-cards {
+    grid-template-columns: repeat(auto-fit, minmax(319px, 319px));
+  }
+}

@@ -1,0 +1,17 @@
+
+{
+  "name": "ozon-bitrix-data-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fetches product attributes from Ozon Seller API, normalizes product data and synchronizes it with Bitrix catalog offers",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

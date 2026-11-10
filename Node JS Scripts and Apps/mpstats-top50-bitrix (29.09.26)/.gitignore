@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+node_modules/
+brands_wb_*.json
+brands_ozon_*.json
+brands_merged_*.json
+npm-debug.log*
